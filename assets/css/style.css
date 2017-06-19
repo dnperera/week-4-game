@@ -1,0 +1,69 @@
+body {
+
+	background: #70e1f5;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #ffd194, #70e1f5);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #ffd194, #70e1f5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	
+	font-family: georgia,Arial, 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+#container {
+	width: 70%;
+	margin:0 auto;
+	border: 2px solid black;
+}
+
+.header h1{
+	width: 98%;
+	text-align: center;
+	background: #77580e;
+	margin : 5px;
+	padding: 10px;
+	color: #fff;
+}
+
+.results {
+	float: left;
+	width: 28%;
+	margin: 15px;
+	font-size: 18px;
+	font-weight: bold;
+
+}
+
+#targetNo {
+	font-size: 25px;
+
+
+}
+
+
+.crystalgallery{
+	width: 94%;
+	background: #fff;
+	margin-left: 19px
+
+}
+
+.crystalgallery img {
+	width: 15%;
+	margin: 20px;
+	border: 3px solid black;
+	border-style: outset;
+	padding: 5px;
+	box-shadow: 10px 10px 5px #888888;
+	border-radius: 30%;
+	cursor: pointer; 
+	cursor: hand;
+}
+
+.score {
+	width: 50%;
+	margin-top: 20px;
+	margin-left: 20px;
+	padding: 15px 5px 15px 10px;
+	background: #dee0e2;
+	margin-bottom: 10px;
+	font-size: 20px;
+	font-weight: bold;
+}
