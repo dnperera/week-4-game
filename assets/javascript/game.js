@@ -1,5 +1,5 @@
 
-var crystalValues = [];
+var crystalValues;
 var wins =0;
 var losses =0;
 var targetValue =0;
@@ -7,23 +7,30 @@ var userTotal =0;
 
 //Generate 4 unique random numbers between 1- 12
 function generateCrystalValues(){
-	while(crystalValues.length < 4){
+	
+	for(var i=0; i<4;){
 
 		var randomNumber = Math.ceil(Math.random() * 12);
+
+		console.log("Ram Num -->"+randomNumber);
+
 		if(crystalValues.indexOf(randomNumber) > -1){
 			continue;
 		}
 		else {
 			crystalValues[crystalValues.length] =randomNumber;
+			i++;
 		}
-	} //-- end while	
+		
+	} // End for
+
 }
 
 
 //Generate Random Number for Target
 function targetNumer(){
 	var randomNum =0;
-	
+	crystalValues = [];
 	while( randomNum < 19  ){
 		randomNum = Math.ceil(Math.random() * 120);
 		
