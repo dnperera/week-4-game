@@ -8,7 +8,9 @@ var userTotal =0;
 //Generate 4 unique random numbers between 1- 12
 function generateCrystalValues(){
 	
-	for(var i=0; i<4;){
+	crystalValues = []; //initialize
+
+	for(var i=0; i< 4;){
 
 		var randomNumber = Math.ceil(Math.random() * 12);
 
@@ -30,7 +32,7 @@ function generateCrystalValues(){
 //Generate Random Number for Target
 function targetNumer(){
 	var randomNum =0;
-	crystalValues = [];
+	
 	while( randomNum < 19  ){
 		randomNum = Math.ceil(Math.random() * 120);
 		
